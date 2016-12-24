@@ -23,7 +23,7 @@
 <header class="header">
     <div class="header-panel">
         <div class="container"><a href="#" class="logo"><img src="img/logo.png" alt=""></a>
-            <button class="button button-default">получить консультацию</button>
+            <button class="button button-default" data-toggle="modal" data-target="#modal-order">получить консультацию</button>
         </div>
     </div>
     <div class="container">
@@ -55,9 +55,12 @@
                     </li>
                 </ul>
                 <div class="certificates">
-                    <span class="fancybox" data-fancybox-href="img/cer.jpg" rel="gallery1"><img src="img/certificate.jpg" alt=""></span>
-                    <span class="fancybox" data-fancybox-href="img/cer-2.jpg" rel="gallery1"><img src="img/certificate-2.jpg" alt=""></span>
-                    <span class="fancybox" data-fancybox-href="img/cer-3.jpg" rel="gallery1"><img src="img/certificate-3.jpg" alt=""></span>
+                    <span class="fancybox" data-fancybox-href="img/cer.jpg" rel="gallery1">
+                        <img src="img/certificate.jpg" alt=""></span>
+                    <span class="fancybox" data-fancybox-href="img/cer-2.jpg" rel="gallery1">
+                        <img src="img/certificate-2.jpg" alt=""></span>
+                    <span class="fancybox" data-fancybox-href="img/cer-3.jpg" rel="gallery1">
+                        <img src="img/certificate-3.jpg" alt=""></span>
                 </div>
             </div>
 
@@ -88,28 +91,109 @@
 
                 <div class="countbox"></div>
 
- <!--               <div class="countbox">
-                    <div class="countbox-num">
-                        <div class="countbox-hours1"><span></span>0</div>
-                        <div class="countbox-hours2"><span></span>2</div>
-                    </div>
-                    <div class="countbox-space"></div>
-                    <div class="countbox-num">
-                        <div class="countbox-mins1"><span></span>0</div>
-                        <div class="countbox-mins2"><span></span>2</div>
-                    </div>
-                    <div class="countbox-space"></div>
-                    <div class="countbox-num">
-                        <div class="countbox-secs1"><span></span>1</div>
-                        <div class="countbox-secs2"><span></span>4</div>
-                    </div>
-                </div>-->
-
                 <div class="order-form-motivation text-bold">Успей оставить заявку!</div>
             </form>
         </div>
     </div>
 </header>
+
+<!-- Modal Получить консультацию -->
+<div class="modal fade" id="modal-order" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+    <div class="modal-dialog modal-sm" role="document">
+        <form action="#" class="feedback-form modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title" id="myModalLabel2">Отправить заявку</h2>
+            </div>
+
+            <div class="modal-body">
+                <div class="form-group">
+                    <input type="text" id="surname2" class="form-control hide-placeholder" placeholder="Ваше имя">
+                    <label class="form-label" for="surname2">Ваше имя</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="phone-number2" class="form-control hide-placeholder" placeholder="Телефон">
+                    <label class="form-label" for="phone-number2">Телефон</label>
+                </div>
+
+                <div class="form-group">
+                <textarea id="feedback-message2" class="form-control hide-placeholder" rows="2"
+                          placeholder="Ваш вопрос нашим специалистам"></textarea>
+                    <label class="form-label" for="feedback-message2">Ваш вопрос нашим специалистам</label>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="button button-default"><span>Отправить заявку</span></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ -->
+<div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title" id="myModalLabel">Политика конфиденциальности</h2>
+            </div>
+            <div class="modal-body">
+                <h3>Правила использования интернет–сайта</h3>
+                <p>Используя данный интернет сайт, вы автоматически соглашаетесь с положениями, указанными ниже. Если вы
+                    не согласны с правилами использования, пожалуйста, не используйте данный сайт.
+                </p>
+
+                <h3>Правила использования материалов</h3>
+                <p>Данный сайт находится в собственности и управляется компанией ООО «АТЛОГ». Никакие материалы (включая
+                    графические) с данного сайта не могут быть скопированы либо интерпретированы и опубликованы в любой
+                    форме, кроме той копии, которая скачивается на компьютер в момент просмотра материалов. Все
+                    скачанные материалы предназначены исключительно для НЕКОММЕРЧЕСКОГО использования, с учетом
+                    сохранения авторских прав и других отметок о их принадлежности собственнику. Изменение материалов
+                    или использование их по другому назначению является нарушением авторских прав ООО «АТЛОГ».
+                    Использование материалов сайта на других интернет-ресурсах без письменного разрешения собственника
+                    запрещается (за исключением торговых марок, логотипов и др. материалов, принадлежащих другим
+                    компаниям, которые показываются на сайте, при условии наличия письменного разрешения от указанных
+                    компаний). ООО «АТЛОГ» НЕ передает права собственности на программное обеспечение, скачанное с
+                    данного сайта, включая, но не ограничиваясь любыми файлами либо изображениями, включенными в
+                    программное обеспечение либо генерируемыми им, и информацию, сопровождающую программное обеспечение
+                    (далее все вышеперечисленное называется программное обеспечение). ООО «АТЛОГ» сохраняет за собой
+                    права на интеллектуальную собственность на все программное обеспечение, разработанное в рамках
+                    компании. Пользователь не имеет права изменять технические характеристики либо продавать данное
+                    программное обеспечение ни при каких условиях. Во всех случаях в соответствии с ч. 4 Гражданского
+                    Кодекса Российской Федерации ссылка на первоисточник должна представлять собой активную гиперссылку
+                    следующего вида: remedium.pro (remedium.pro).
+                </p>
+
+                <h3>Отказ от ответственности</h3>
+                <p>ООО «АТЛОГ» не несет ответственности за любые повреждения, являющиеся результатом доступа (или
+                    отсутствия возможности доступа), либо вашего отношения к информации, опубликованной на данном сайте.
+                    Вся информация на данном сайте предоставляется без гарантий любого рода явных или неявных. ООО
+                    «АТЛОГ» не гарантирует, что сайт будет функционировать без ошибок и не несет ответственности за
+                    любые опубликованные на сайте материалы, в том числе рекламного характера, а также за их
+                    корректность и надежность их использования.
+                </p>
+
+                <h3>Другое</h3>
+                <p>Ни при каких обстоятельствах, включая, но не ограничиваясь небрежным либо халатным отношением, ООО
+                    «АТЛОГ» не несет ответственности за любые прямые либо косвенные убытки, вызванные использованием
+                    данного сайта либо невозможностью его использования, даже если ООО «АТЛОГ» либо представители ООО
+                    «АТЛОГ» были уведомлены о возможности наступления таких убытков. Ни при каких событиях ООО «АТЛОГ»
+                    не будет даже рассматривать возможность обсуждения любых убытков или повреждений, вызванных
+                    пользованием данного сайта, даже в случае наступления гражданского деликта. ООО «АТЛОГ» может
+                    использовать любую информацию, публикуемую на данном сайте, по собственному усмотрению, не
+                    ограничиваясь никакими положениями, кроме действующего законодательства РФ.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="js/jquery.js"></script>
 <script src="js/lib.js"></script>

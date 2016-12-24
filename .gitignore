@@ -1,0 +1,6 @@
+bower_components
+node_modules
+.idea/
+ali-caps-plus.iml
+source/
+/build

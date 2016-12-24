@@ -5,46 +5,52 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=ba9815cc66f2b57ef6563c3a34cb76ce)
- * Config saved to config.json and https://gist.github.com/ba9815cc66f2b57ef6563c3a34cb76ce
- */
-/*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=fac7faee9ce56229ef3dae53d857cb66)
+ * Config saved to config.json and https://gist.github.com/fac7faee9ce56229ef3dae53d857cb66
  */
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-.sr-only-focusable:active,
-.sr-only-focusable:focus {
-  position: static;
-  width: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  clip: auto;
-}
-[role="button"] {
-  cursor: pointer;
-}
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
   -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
 }
+
 .fade.in {
   opacity: 1;
 }
+
+.collapse {
+  display: none;
+}
+
+.collapse.in {
+  display: block;
+}
+
+tr.collapse.in {
+  display: table-row;
+}
+
+tbody.collapse.in {
+  display: table-row-group;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-property: height, visibility;
+  -o-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-duration: 0.35s;
+  -o-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
 .close {
   float: right;
   font-size: 21px;
@@ -55,6 +61,7 @@
   opacity: 0.2;
   filter: alpha(opacity=20);
 }
+
 .close:hover,
 .close:focus {
   color: #000000;
@@ -63,6 +70,7 @@
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
+
 button.close {
   padding: 0;
   cursor: pointer;
@@ -70,9 +78,11 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
+
 .modal-open {
   overflow: hidden;
 }
+
 .modal {
   display: none;
   overflow: hidden;
@@ -85,6 +95,7 @@ button.close {
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
+
 .modal.fade .modal-dialog {
   -webkit-transform: translate(0, -25%);
   -ms-transform: translate(0, -25%);
@@ -94,21 +105,25 @@ button.close {
   -o-transition: -o-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
+
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
+
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 .modal-dialog {
   position: relative;
   width: auto;
   margin: 10px;
 }
+
 .modal-content {
   position: relative;
   background-color: #ffffff;
@@ -118,9 +133,10 @@ button.close {
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   -webkit-background-clip: padding-box;
-          background-clip: padding-box;
+  background-clip: padding-box;
   outline: 0;
 }
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -130,44 +146,55 @@ button.close {
   z-index: 1040;
   background-color: #000000;
 }
+
 .modal-backdrop.fade {
   opacity: 0;
   filter: alpha(opacity=0);
 }
+
 .modal-backdrop.in {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
+
 .modal-header {
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
 }
+
 .modal-header .close {
   margin-top: -2px;
 }
+
 .modal-title {
   margin: 0;
   line-height: 1.42857143;
 }
+
 .modal-body {
   position: relative;
   padding: 15px;
 }
+
 .modal-footer {
   padding: 15px;
   text-align: right;
   border-top: 1px solid #e5e5e5;
 }
+
 .modal-footer .btn + .btn {
   margin-left: 5px;
   margin-bottom: 0;
 }
+
 .modal-footer .btn-group .btn + .btn {
   margin-left: -1px;
 }
+
 .modal-footer .btn-block + .btn-block {
   margin-left: 0;
 }
+
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
@@ -175,6 +202,7 @@ button.close {
   height: 50px;
   overflow: scroll;
 }
+
 @media (min-width: 768px) {
   .modal-dialog {
     width: 600px;
@@ -188,6 +216,7 @@ button.close {
     width: 300px;
   }
 }
+
 @media (min-width: 992px) {
   .modal-lg {
     width: 900px;
@@ -200,6 +229,7 @@ button.close {
   content: " ";
   display: table;
 }
+
 .clearfix:after,
 .modal-header:after,
 .modal-footer:after {
