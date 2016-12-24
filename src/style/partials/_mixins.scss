@@ -1,0 +1,49 @@
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+//@include font-size(14px);
+@mixin font-size($size) {
+  font-size: calculateRem($size);
+}
+
+//@include fader(hide);
+//@include fader(show);
+@mixin fader($status) {
+  @if $status == 'hide' {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+  } @else if $status == 'show' {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s, opacity 0.3s;
+  }
+}
+
+//Альтернатива display none
+//@include hide-display;
+@mixin hide-display() {
+  position: absolute;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  opacity: 0;
+}
+
+//Очиститель потоков clearfix
+@mixin clearfix {
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
+
+@mixin stitches-sprite($x: 0, $y: 0, $width: 0, $height: 0) {
+  width: $width;
+  height: $height;
+  background: url('../img/spritesheet.png') no-repeat $x $y;
+  display: inline-block;
+}

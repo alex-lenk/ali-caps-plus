@@ -1,0 +1,387 @@
+@font-face {
+  font-family: 'GothamPro-Black';
+  src: url('../fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Black.otf') format('opentype'),
+  url('../fonts/GothamPro-Black.woff') format('woff'), url('../fonts/GothamPro-Black.ttf') format('truetype'), url('../fonts/GothamPro-Black.svg#GothamPro-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamPro-Bold';
+  src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Bold.otf') format('opentype'),
+  url('../fonts/GothamPro-Bold.woff') format('woff'), url('../fonts/GothamPro-Bold.ttf') format('truetype'), url('../fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  src: url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro.otf') format('opentype'),
+  url('../fonts/GothamPro.woff') format('woff'), url('../fonts/GothamPro.ttf') format('truetype'), url('../fonts/GothamPro.svg#GothamPro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamPro-Light';
+  src: url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Light.otf') format('opentype'),
+  url('../fonts/GothamPro-Light.woff') format('woff'), url('../fonts/GothamPro-Light.ttf') format('truetype'), url('../fonts/GothamPro-Light.svg#GothamPro-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Akrobat-Black';
+  src: url('../fonts/Akrobat-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/Akrobat-Black.otf') format('opentype'),
+  url('../fonts/Akrobat-Black.woff') format('woff'), url('../fonts/Akrobat-Black.ttf') format('truetype'), url('../fonts/Akrobat-Black.svg#Akrobat-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Akrobat-Bold';
+  src: url('../fonts/Akrobat-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Akrobat-Bold.otf') format('opentype'),
+  url('../fonts/Akrobat-Bold.woff') format('woff'), url('../fonts/Akrobat-Bold.ttf') format('truetype'), url('../fonts/Akrobat-Bold.svg#Akrobat-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Akrobat-Regular';
+  src: url('../fonts/Akrobat-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Akrobat-Regular.otf') format('opentype'),
+  url('../fonts/Akrobat-Regular.woff') format('woff'), url('../fonts/Akrobat-Regular.ttf') format('truetype'), url('../fonts/Akrobat-Regular.svg#Akrobat-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MovieLettersCyrillic';
+  src: url('../fonts/MovieLettersCyrillic.eot?#iefix') format('embedded-opentype'), url('../fonts/MovieLettersCyrillic.woff') format('woff'), url('../fonts/MovieLettersCyrillic.ttf') format('truetype'), url('../fonts/MovieLettersCyrillic.svg#MovieLettersCyrillic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* FONTS MIXIN */
+
+@mixin GothamBlack() {
+  font-family: 'GothamPro-Black', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin GothamBold() {
+  font-family: 'GothamPro-Bold', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin GothamRegular() {
+  font-family: 'GothamPro', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin GothamLight() {
+  font-family: 'GothamPro-Light', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin AkrobatBlack() {
+  font-family: 'Akrobat-Black', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin AkrobatBold() {
+  font-family: 'Akrobat-Bold', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin AkrobatRegular() {
+  font-family: 'Akrobat-Regular', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin MovieLetCyr() {
+  font-family: 'MovieLettersCyrillic', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  line-height: 1.42857143;
+  color: #111010;
+  font-size: 18px;
+  background: #fff;
+  @include GothamRegular;
+}
+
+.as-link {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  display: inline;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+a, .as-link {
+  text-decoration: none;
+  transition: all .4s ease-in-out;
+  &:hover, a:focus {
+    color: #cb4345;
+    border-bottom-color: transparent;
+  }
+}
+
+::selection {
+  background: #cb2e26; /* Safari */
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #cb2e26; /* Firefox */
+  color: #fff;
+}
+
+.text {
+  &-center {
+    text-align: center;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-bold {
+    @include GothamBold;
+  }
+  &-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+  }
+}
+
+b, strong {
+  @include GothamBold;
+}
+
+.form {
+  &-label {
+    margin: 0;
+    display: inline-block;
+    max-width: 100%;
+    position: absolute;
+    top: 28px;
+    left: 30%;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 16px;
+    transition: all ease-in-out .5s;
+  }
+  &-group {
+    margin-bottom: 10px;
+    position: relative;
+  }
+  &-control {
+    width: 100%;
+    height: 44px;
+    line-height: 39px;
+    padding: 0 15px;
+    font-size: 18px;
+    background-color: #fff;
+    border: 1px solid #e1e0de;
+    transition: all .3s ease;
+    &:focus {
+      outline: 0;
+      + label {
+        top: -6px;
+        font-size: 12px;
+        opacity: 1;
+        visibility: visible;
+        left: 10px;
+        padding: 1px 2px;
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 100px;
+  resize: vertical;
+}
+
+.hide-placeholder::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #686868;
+  font-size: 12px;
+}
+
+.hide-placeholder::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #686868;
+  font-size: 12px;
+}
+
+.hide-placeholder:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #686868;
+  font-size: 12px;
+}
+
+.hide-placeholder:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #fff;
+  font-size: 12px;
+}
+
+.hide-placeholder:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #686868;
+}
+
+.hide-placeholder:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #686868;
+}
+
+.hide-placeholder:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #686868;
+}
+
+.hide-placeholder:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #686868;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.button {
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  color: #111010;
+  position: relative;
+  cursor: pointer;
+  transition: all .4s ease;
+  @include AkrobatBold;
+  &:focus {
+    outline: none;
+  }
+  &-default {
+    padding: 7px 12px;
+    letter-spacing: 1px;
+    background-color: #e7ae4a;
+    text-transform: uppercase;
+    &:hover {
+      background-color: #fff;
+      outline: 1px solid #e7ae4a;
+    }
+  }
+}
+
+.white {
+  color: #fff;
+}
+
+.yellow {
+  color: #e7ae4a;
+}
+
+/*
+.sprite {
+  &-courier {
+    @include stitches-sprite(-5px, -5px, 79px, 43px);
+  }
+
+  &-dhl {
+    @include stitches-sprite(-94px, -5px, 84px, 21px);
+  }
+
+  &-icon {
+    @include stitches-sprite(-94px, -36px, 51px, 51px);
+  }
+
+  &-icon-2 {
+    @include stitches-sprite(-155px, -36px, 51px, 51px);
+  }
+
+  &-icon-3 {
+    @include stitches-sprite(-5px, -97px, 51px, 51px);
+  }
+
+  &-icon-4 {
+    @include stitches-sprite(-66px, -97px, 51px, 51px);
+  }
+
+  &-icon-5 {
+    @include stitches-sprite(-127px, -97px, 51px, 51px);
+  }
+
+  &-icon-6 {
+    @include stitches-sprite(-5px, -158px, 53px, 15px);
+  }
+
+  &-item-big {
+    @include stitches-sprite(-68px, -158px, 90px, 35px);
+  }
+
+  &-item-header {
+    @include stitches-sprite(-188px, -5px, 32px, 13px);
+  }
+
+  &-jcb {
+    @include stitches-sprite(-188px, -97px, 43px, 41px);
+  }
+
+  &-mastercard {
+    @include stitches-sprite(-230px, -5px, 74px, 51px);
+  }
+
+  &-mastercard-securecode {
+    @include stitches-sprite(-188px, -148px, 80px, 42px);
+  }
+
+  &-post-russia {
+    @include stitches-sprite(-241px, -66px, 76px, 38px);
+  }
+
+  &-visa {
+    @include stitches-sprite(-168px, -200px, 56px, 39px);
+  }
+
+  &-visa-verified {
+    @include stitches-sprite(-234px, -200px, 74px, 47px);
+  }
+}
+*/
+

@@ -1,0 +1,27 @@
+.countbox {
+  margin: 10px 0 10px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  &-space {
+    display: none;
+  }
+  &-hours1, &-mins1, &-secs1 {
+    margin: 0 5px 0 0;
+  }
+  &-hours1, &-hours2, &-mins1, &-mins2, &-secs1, &-secs2 {
+    width: 33px;
+    height: 50px;
+    line-height: 46px;
+    padding: 0 7px;
+    float: left;
+    background-color: #111010;
+    font-size: 40px;
+    text-align: center;
+    z-index: 1;
+    @include AkrobatRegular;
+  }
+  &-hours-text, &-mins-text, &-secs-text {
+    display: none;
+  }
+}

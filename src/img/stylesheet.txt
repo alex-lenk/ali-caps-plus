@@ -1,0 +1,74 @@
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.sprite {
+    background-image: url(spritesheet.png);    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-courier {
+        .stitches-sprite(-5px, -5px, 79px, 43px);
+    }
+
+    &.sprite-dhl {
+        .stitches-sprite(-94px, -5px, 84px, 21px);
+    }
+
+    &.sprite-icon {
+        .stitches-sprite(-94px, -36px, 51px, 51px);
+    }
+
+    &.sprite-icon-2 {
+        .stitches-sprite(-155px, -36px, 51px, 51px);
+    }
+
+    &.sprite-icon-3 {
+        .stitches-sprite(-5px, -97px, 51px, 51px);
+    }
+
+    &.sprite-icon-4 {
+        .stitches-sprite(-66px, -97px, 51px, 51px);
+    }
+
+    &.sprite-icon-5 {
+        .stitches-sprite(-127px, -97px, 51px, 51px);
+    }
+
+    &.sprite-icon-6 {
+        .stitches-sprite(-5px, -158px, 53px, 15px);
+    }
+
+    &.sprite-item-big {
+        .stitches-sprite(-68px, -158px, 90px, 35px);
+    }
+
+    &.sprite-item-header {
+        .stitches-sprite(-188px, -5px, 32px, 13px);
+    }
+
+    &.sprite-jcb {
+        .stitches-sprite(-188px, -97px, 43px, 41px);
+    }
+
+    &.sprite-mastercard {
+        .stitches-sprite(-230px, -5px, 74px, 51px);
+    }
+
+    &.sprite-mastercard-securecode {
+        .stitches-sprite(-188px, -148px, 80px, 42px);
+    }
+
+    &.sprite-post-russia {
+        .stitches-sprite(-241px, -66px, 76px, 38px);
+    }
+
+    &.sprite-visa {
+        .stitches-sprite(-168px, -200px, 56px, 39px);
+    }
+
+    &.sprite-visa-verified {
+        .stitches-sprite(-234px, -200px, 74px, 47px);
+    }
+}
