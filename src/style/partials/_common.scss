@@ -325,64 +325,97 @@ textarea.form-control {
   &-courier {
     @include stitches-sprite(-5px, -5px, 79px, 43px);
   }
-
   &-dhl {
     @include stitches-sprite(-94px, -5px, 84px, 21px);
   }
-
   &-icon::before {
     @include stitches-sprite(-94px, -36px, 51px, 51px);
   }
-
   &-icon-2::before {
     @include stitches-sprite(-155px, -36px, 51px, 51px);
   }
-
   &-icon-3::before {
     @include stitches-sprite(-5px, -97px, 51px, 51px);
   }
-
   &-icon-4::before {
     @include stitches-sprite(-66px, -97px, 51px, 51px);
   }
-
   &-icon-5::before {
     @include stitches-sprite(-127px, -97px, 51px, 51px);
   }
-
   &-icon-6::before {
     @include stitches-sprite(-5px, -158px, 53px, 15px);
   }
-
   &-item-big {
     @include stitches-sprite(-68px, -158px, 90px, 35px);
   }
-
   &-item-header {
     @include stitches-sprite(-188px, -5px, 32px, 13px);
   }
-
   &-jcb {
     @include stitches-sprite(-188px, -97px, 43px, 41px);
   }
-
   &-mastercard {
     @include stitches-sprite(-230px, -5px, 74px, 51px);
   }
-
   &-mastercard-securecode {
     @include stitches-sprite(-188px, -148px, 80px, 42px);
   }
-
   &-post-russia {
     @include stitches-sprite(-241px, -66px, 76px, 38px);
   }
-
   &-visa {
     @include stitches-sprite(-168px, -200px, 56px, 39px);
   }
-
   &-visa-verified {
     @include stitches-sprite(-234px, -200px, 74px, 47px);
   }
 }
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* For example
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+*/

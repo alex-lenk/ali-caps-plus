@@ -1,0 +1,74 @@
+.composition {
+  padding-bottom: 30px;
+  color: #fff;
+  background: url("../img/bg-composition.jpg") no-repeat center top;
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: item;
+    li {
+      display: flex;
+      justify-content: space-between;
+      &:before {
+        content: "0" counters(item, ".");
+        counter-increment: item;
+        line-height: .75;
+        margin-right: 10px;
+        display: block;
+        color: #292929;
+        font-size: 120px;
+        transition: all .4s ease;
+        @include AkrobatBlack;
+      }
+      &:hover {
+        &:before {
+          color: #fff;
+        }
+        img {
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+          -webkit-animation-name: pulse;
+          animation-name: pulse;
+        }
+        .title::after {
+          width: 100%;
+        }
+      }
+    }
+    img {
+      align-self: baseline;
+    }
+    .content {
+      padding-top: 65px;
+    }
+    .title {
+      margin-bottom: 20px;
+      font-size: 24px;
+      display: inline-block;
+      &:after {
+        margin-top: 15px;
+        width: 35px;
+        height: 1px;
+        display: block;
+        background-color: #e7ae4a;
+        content: '';
+        transition: all .8s ease;
+      }
+    }
+    .text {
+      line-height: 28px;
+    }
+    .evrikoma, .damian {
+      &:before {
+        order: 1;
+        margin-left: -35px;
+      }
+      .content {
+        order: 2;
+      }
+    }
+  }
+}
