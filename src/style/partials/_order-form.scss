@@ -1,0 +1,48 @@
+.order-form {
+  width: 365px;
+  padding: 20px 35px;
+  text-align: center;
+  line-height: 1;
+  background-color: rgba(255, 255, 255, .8);
+  align-self: flex-end;
+  &-today {
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-transform: uppercase;
+    @include AkrobatRegular;
+  }
+  &-stock {
+    font-size: 48px;
+    text-transform: uppercase;
+    @include AkrobatBlack;
+
+  }
+  .old-price {
+    margin-top: 20px;
+    font-size: 24px;
+    display: block;
+    text-transform: uppercase;
+    @include AkrobatRegular;
+  }
+  .new-price {
+    padding-top: 5px;
+    margin-bottom: 15px;
+    font-size: 48px;
+    text-transform: uppercase;
+    @include AkrobatBlack;
+  }
+  .form-control {
+    text-align: center;
+  }
+  .button-default {
+    width: 100%;
+    padding: 12px 10px;
+  }
+  &-text {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  &-motivation {
+    color: #d99827;
+  }
+}

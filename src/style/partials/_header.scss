@@ -1,0 +1,96 @@
+.header {
+  background: url("../img/bg-header.jpg") no-repeat center top #eaeaea;
+  position: relative;
+  &:after {
+    height: 105px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    content: '';
+    background: #343129;
+    background: -moz-linear-gradient(left, #343129 2%, #80735c 48%, #343129 100%);
+    background: -webkit-linear-gradient(left, #343129 2%, #80735c 48%, #343129 100%);
+    background: linear-gradient(to right, #343129 2%, #80735c 48%, #343129 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#343129', endColorstr='#343129', GradientType=1);
+  }
+  .container {
+    position: relative;
+    z-index: 6;
+  }
+  &-panel {
+    margin-bottom: 40px;
+    background-color: #08090c;
+    .container {
+      height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &-signature {
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-transform: uppercase;
+    @include AkrobatBlack;
+  }
+  &-title {
+    margin: 0 0 45px;
+    line-height: 1;
+    font-size: 70px;
+    letter-spacing: 13px;
+    text-transform: uppercase;
+    @include GothamBlack;
+    &-text {
+      @include GothamLight;
+    }
+  }
+  &-list {
+    margin: 0 0 135px;
+    padding: 0;
+    list-style: none;
+    li {
+      padding-left: 50px;
+      position: relative;
+      line-height: 1.3;
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+      &::before {
+        position: absolute;
+        top: 7px;
+        left: 0;
+        content: '';
+        @include stitches-sprite(-188px, -5px, 32px, 13px);
+      }
+    }
+  }
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    .left {
+      width: 350px;
+    }
+    .certificates {
+      margin-bottom: 70px;
+      .fancybox {
+        margin-right: 10px;
+        padding: 5px;
+        background-color: #fff;
+        display: inline-block;
+        vertical-align: top;
+        cursor: pointer;
+        transition: all .3s ease;
+        &:hover {
+          background-color: #d99827;
+        }
+      }
+    }
+    .product {
+      margin-bottom: 20px;
+      align-self: flex-end;
+    }
+  }
+}

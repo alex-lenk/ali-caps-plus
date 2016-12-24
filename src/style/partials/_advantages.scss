@@ -1,0 +1,39 @@
+.advantages {
+  background: url(../img/bg-advantages.jpg) no-repeat center top;
+  &-brand {
+    margin-top: 10px;
+    display: block;
+    @include AkrobatBlack;
+  }
+  &-list {
+    margin: 0;
+    padding: 0 0 50px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li {
+      margin-bottom: 55px;
+      flex-basis: 30%;
+      color: #908c86;
+    }
+    .title {
+      margin-bottom: 50px;
+      font-size: 24px;
+      @include clearfix;
+      .text-bold {
+        display: block;
+        line-height: 1;
+      }
+      &::before {
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 15px;
+        content: '';
+      }
+    }
+    .sprite-icon-4 .text-bold {
+      padding-top: 15px;
+    }
+  }
+}

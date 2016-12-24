@@ -321,7 +321,6 @@ textarea.form-control {
   color: #e7ae4a;
 }
 
-/*
 .sprite {
   &-courier {
     @include stitches-sprite(-5px, -5px, 79px, 43px);
@@ -331,27 +330,27 @@ textarea.form-control {
     @include stitches-sprite(-94px, -5px, 84px, 21px);
   }
 
-  &-icon {
+  &-icon::before {
     @include stitches-sprite(-94px, -36px, 51px, 51px);
   }
 
-  &-icon-2 {
+  &-icon-2::before {
     @include stitches-sprite(-155px, -36px, 51px, 51px);
   }
 
-  &-icon-3 {
+  &-icon-3::before {
     @include stitches-sprite(-5px, -97px, 51px, 51px);
   }
 
-  &-icon-4 {
+  &-icon-4::before {
     @include stitches-sprite(-66px, -97px, 51px, 51px);
   }
 
-  &-icon-5 {
+  &-icon-5::before {
     @include stitches-sprite(-127px, -97px, 51px, 51px);
   }
 
-  &-icon-6 {
+  &-icon-6::before {
     @include stitches-sprite(-5px, -158px, 53px, 15px);
   }
 
@@ -387,5 +386,3 @@ textarea.form-control {
     @include stitches-sprite(-234px, -200px, 74px, 47px);
   }
 }
-*/
-
