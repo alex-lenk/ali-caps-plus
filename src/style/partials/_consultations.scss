@@ -1,0 +1,31 @@
+.consultation {
+  background: #75654e;
+  .container {
+    padding-top: 35px;
+    padding-bottom: 40px;
+    font-size: 32px;
+    letter-spacing: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    background: url("../img/consultant.png") no-repeat 60px 0;
+    @include AkrobatRegular;
+    .free {
+      font-size: 60px;
+      letter-spacing: 6px;
+      @include AkrobatBlack;
+    }
+  }
+  &-button {
+    padding: 30px 0;
+    background-color: #111010;
+    .button {
+      height: 76px;
+      max-width: 472px;
+      width: 100%;
+      letter-spacing: 1.5px;
+      padding-top: 2px;
+      font-size: 32px;
+      @include AkrobatRegular;
+    }
+  }
+}
