@@ -1,0 +1,87 @@
+.main-indications {
+  padding-bottom: 40px;
+  color: #fff;
+  background: url("../img/bg-main-indications.jpg") no-repeat center top;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-block-title {
+    margin-bottom: 30px;
+    text-align: right;
+    width: 100%;
+    letter-spacing: 6px;
+    .text {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .percent {
+      letter-spacing: 1px;
+      margin-right: 45px;
+      color: #e7ae4a;
+      font-size: 150px;
+      display: inline-block;
+      vertical-align: middle;
+      @include AkrobatBlack;
+    }
+  }
+  &-annotation {
+    margin-bottom: 10px;
+    font-size: 32px;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 3px;
+    @include AkrobatBold;
+    .wrap {
+      display: inline-block;
+      text-align: left;
+    }
+    .brand {
+      font-size: 36px;
+      color: #e7ae4a;
+      letter-spacing: 7px;
+      @include GothamLight
+    }
+    .plus {
+      @include GothamBlack;
+    }
+  }
+  &-product {
+    padding-top: 20px;
+    flex-basis: 50%;
+  }
+  &-wrap {
+    flex-basis: 50%;
+  }
+
+  &-info {
+    margin-bottom: 50px;
+  }
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      padding-left: 55px;
+      margin-bottom: 20px;
+      position: relative;
+      &::before {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 5px;
+        left: 0;
+        color: #1f1f1f;
+        font-size: 30px;
+        line-height: 30px;
+        background-color: #e7ae4a;
+        border-radius: 50%;
+        text-align: center;
+        content: '•';
+      }
+    }
+  }
+}

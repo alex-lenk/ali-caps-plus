@@ -148,18 +148,18 @@ a, .as-link {
   text-decoration: none;
   transition: all .4s ease-in-out;
   &:hover, a:focus {
-    color: #cb4345;
+    color: #e7ae4a;
     border-bottom-color: transparent;
   }
 }
 
 ::selection {
-  background: #cb2e26; /* Safari */
+  background: #e7ae4a;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #cb2e26; /* Firefox */
+  background: #e7ae4a;
   color: #fff;
 }
 
