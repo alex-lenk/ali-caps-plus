@@ -1,0 +1,26 @@
+.faq {
+  padding-bottom: 70px;
+  background-color: #e9e9e9;
+  .panel-default {
+    margin-bottom: 30px;
+  }
+  .panel-title {
+    margin: 0;
+    font-size: 24px;
+    color: #c6891f;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    transition: all .3s ease;
+    @include GothamBold;
+    &.collapsed {
+      border-bottom-color: #c6891f;
+      color: #111010;
+      &:hover {
+        color: #c6891f;
+      }
+    }
+  }
+  .panel-body {
+    margin-top: 25px;
+  }
+}
