@@ -27,6 +27,9 @@
       width: 100%;
       letter-spacing: 1.5px;
       padding-top: 2px;
+      &:hover {
+        color: #fff;
+      }
       @include AkrobatRegular;
       @include from('m') {
         font-size: 32px;
