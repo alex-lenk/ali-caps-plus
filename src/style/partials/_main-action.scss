@@ -1,0 +1,56 @@
+
+.main-action {
+  display: flex;
+  &:hover {
+    .product img {
+      margin-right: 90px;
+    }
+  }
+  &-left, &-right {
+    flex-basis: 50%;
+  }
+  &-left {
+    position: relative;
+    background-color: #5b5243;
+    .main-action-column {
+      float: right;
+    }
+    .text {
+      font-size: 24px;
+      color: #fff;
+      .yellow {
+        text-transform: uppercase;
+      }
+    }
+  }
+  &-column {
+    width: 100%;
+    max-width: 585px;
+    display: inline-block;
+  }
+  &-title {
+    margin: 50px 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 60px;
+    @include AkrobatBlack;
+  }
+  .product {
+    margin: 45px 0 35px;
+    text-align: right;
+    img {
+      margin-right: -90px;
+      transition: all 1s ease;
+    }
+  }
+  .order-form {
+    margin: 0 auto;
+    padding: 55px 0 0;
+  }
+  .countbox {
+    margin: 15px 0 25px;
+  }
+  .order-form-text {
+    margin-top: 15px;
+  }
+}
