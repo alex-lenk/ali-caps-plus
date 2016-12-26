@@ -1,19 +1,24 @@
 .header {
   background: url("../img/bg-header.jpg") no-repeat center top #eaeaea;
   position: relative;
-  &:after {
-    height: 105px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 5;
-    content: '';
-    background: #343129;
-    background: -moz-linear-gradient(left, #343129 2%, #80735c 48%, #343129 100%);
-    background: -webkit-linear-gradient(left, #343129 2%, #80735c 48%, #343129 100%);
-    background: linear-gradient(to right, #343129 2%, #80735c 48%, #343129 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#343129', endColorstr='#343129', GradientType=1);
+  @include to('m') {
+    background-color: #fdf9f6;
+  }
+  @include from('l') {
+    &:after {
+      height: 105px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+      content: '';
+      background: #343129;
+      background: -moz-linear-gradient(left, #343129 2%, #80735c 48%, #343129 100%);
+      background: -webkit-linear-gradient(left, #343129 2%, #80735c 48%, #343129 100%);
+      background: linear-gradient(to right, #343129 2%, #80735c 48%, #343129 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#343129', endColorstr='#343129', GradientType=1);
+    }
   }
   .container {
     position: relative;
@@ -22,11 +27,25 @@
   &-panel {
     margin-bottom: 40px;
     background-color: #08090c;
-    .container {
-      height: 76px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .button {
+      &:hover {
+        color: #fff;
+      }
+      @include to('s') {
+        display: none;
+      }
+    }
+    @include to('s') {
+      padding: 5px 0;
+      text-align: center;
+    }
+    @include from('m') {
+      .container {
+        height: 76px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
     }
   }
 
@@ -43,6 +62,12 @@
     letter-spacing: 13px;
     text-transform: uppercase;
     @include GothamBlack;
+    @include to("m") {
+      font-size: 30px;
+      .white {
+        color: #d99827;
+      }
+    }
     &-text {
       @include GothamLight;
     }
@@ -51,6 +76,11 @@
     margin: 0 0 135px;
     padding: 0;
     list-style: none;
+    @include to('m') {
+      margin: 0 0 60px;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, .7);
+    }
     li {
       padding-left: 50px;
       position: relative;
@@ -70,17 +100,23 @@
   &-bottom {
     display: flex;
     justify-content: space-between;
+    @include to('m') {
+      flex-direction: column;
+      align-items: center;
+    }
     .left {
-      width: 350px;
+      @include from('l') {
+        width: 350px;
+      }
     }
     .certificates {
       margin-bottom: 70px;
+      display: flex;
+      justify-content: space-between;
       .fancybox {
         margin-right: 10px;
         padding: 5px;
         background-color: #fff;
-        display: inline-block;
-        vertical-align: top;
         cursor: pointer;
         transition: all .3s ease;
         &:hover {
@@ -88,8 +124,15 @@
         }
       }
     }
-    .product {
-      margin-bottom: 20px;
+  }
+  .product {
+    margin-bottom: 20px;
+    @include from('l') {
+      align-self: flex-end;
+    }
+  }
+  .form-page {
+    @include from('l') {
       align-self: flex-end;
     }
   }

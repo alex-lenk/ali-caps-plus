@@ -1,10 +1,11 @@
-.order-form {
-  width: 365px;
-  padding: 20px 35px;
+.form-page {
   text-align: center;
   line-height: 1;
   background-color: rgba(255, 255, 255, .8);
-  align-self: flex-end;
+  @include from('s'){
+    width: 365px;
+    padding: 20px 35px;
+  }
   &-today {
     margin-bottom: 15px;
     font-size: 24px;
@@ -37,6 +38,9 @@
   .button-default {
     width: 100%;
     padding: 12px 10px;
+    &:hover {
+      outline: none;
+    }
   }
   &-text {
     margin: 10px 0;

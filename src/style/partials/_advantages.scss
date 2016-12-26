@@ -1,5 +1,6 @@
 .advantages {
   background: url(../img/bg-advantages.jpg) no-repeat center top;
+  background-size: cover;
   &-brand {
     margin-top: 10px;
     display: block;
@@ -12,14 +13,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @include to('s') {
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+    }
     li {
       margin-bottom: 55px;
       flex-basis: 30%;
-      color: #908c86;
+      @include from('m') {
+        color: #908c86;
+      }
     }
     .title {
       margin-bottom: 50px;
       font-size: 24px;
+      color: #fff;
       @include clearfix;
       .text-bold {
         display: block;

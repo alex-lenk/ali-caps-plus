@@ -28,7 +28,7 @@
     </div>
 
     <div class="container">
-        <div class="header-signature">популярный эффективный препарат</div>
+        <div class="header-signature">Популярный  и эффективный препарат с анонимной доставкой</div>
 
         <h1 class="header-title">
             <span class="header-title-text">али капс<sup>©</sup></span>
@@ -67,10 +67,10 @@
 
             <div class="product"><img src="img/preparation.png" alt=""></div>
 
-            <form action="/order" class="order-form">
-                <div class="order-form-today">только сегодня</div>
+            <form action="/order" class="order-form form-page">
+                <div class="form-page-today">только сегодня</div>
 
-                <div class="order-form-stock">акция <span class="yellow">4+1</span></div>
+                <div class="form-page-stock">акция <span class="yellow">4+1</span></div>
 
                 <s class="old-price">4 950 руб</s>
 
@@ -88,11 +88,11 @@
 
                 <button class="button button-default">Узнать подробнее</button>
 
-                <div class="order-form-text">До окончании акции осталось</div>
+                <div class="form-page-text">До окончании акции осталось</div>
 
                 <div class="countbox"></div>
 
-                <div class="order-form-motivation text-bold">Успей оставить заявку!</div>
+                <div class="form-page-motivation text-bold">Успей оставить заявку!</div>
             </form>
         </div>
     </div>
@@ -104,41 +104,41 @@
 
         <ul class="advantages-list">
             <li>
-                <div  class="title white sprite-icon">
+                <div  class="title sprite-icon">
                     <span class="text-bold">Беслатная</span> консультация
                 </div>
                 Мы проводим БЕСПЛАТНУЮ профессиональную консультацию с целью выявления существующей проблемы и ее
                 дальнейшего, успешного решения.
             </li>
             <li>
-                <div class="title white sprite-icon-2">
+                <div class="title sprite-icon-2">
                     <span class="text-bold">100%</span> натуральный состав
                 </div>
                 100% НАТУРАЛЬНЫЙ состав препарата, укрепляющий мужской организм! Без химии. Не вызывает привыкания.
             </li>
             <li>
-                <div class="title white sprite-icon-3">
+                <div class="title sprite-icon-3">
                     <span class="text-bold">Гаратния</span> качества
                 </div>
                 Мы ГАРАНТИРУЕМ подлинность и качество продукции, т.к. являемся официальным и ЕДИНСТВЕННЫМ поставщиком
                 АЛИ КАПС ПЛЮС
             </li>
             <li>
-                <div class="title white sprite-icon-4">
+                <div class="title sprite-icon-4">
                     <span class="text-bold">Конфиденциальность</span>
                 </div>
                 Мы гарантируем полную КОНФИДЕНЦИАЛЬНОСТЬ при получении Вами товара. Никто, кроме Вас, не узнает
                 о содержимом доставочной упаковки.
             </li>
             <li>
-                <div class="title white sprite-icon-5">
+                <div class="title sprite-icon-5">
                     <span class="text-bold">Накопительная</span> система скидок
                 </div>
                 Для постоянных клиентов действует НАКОПИТЕЛЬНАЯ СИСТЕМА СКИДОК. 10%
                 от стоимости покупки возвращается на Ваш счет.
             </li>
             <li>
-                <div class="title white sprite-icon-6">
+                <div class="title sprite-icon-6">
                     <span class="text-bold">8 000 000</span> мужчин
                 </div>
                 Уже более 8 МИЛЛИОНОВ мужчин успешно решили свои проблемы с помощью АЛИ КАПС ПЛЮС и теперь живут
@@ -245,7 +245,7 @@
     </div>
 
     <div class="consultation-button">
-        <button class="button button-default">Получить консультацию</button>
+        <button class="button button-default" data-toggle="modal" data-target="#modal-order">Получить консультацию</button>
     </div>
 </section>
 
@@ -357,10 +357,10 @@
     </div>
     <div class="main-action-right">
         <div class="main-action-column">
-            <form action="/order" class="order-form">
-                <div class="order-form-today">только сегодня</div>
+            <form action="/order" class="order-form form-page">
+                <div class="form-page-today">только сегодня</div>
 
-                <div class="order-form-stock">акция <span class="yellow">4+1</span></div>
+                <div class="form-page-stock">акция <span class="yellow">4+1</span></div>
 
                 <s class="old-price">4 950 руб</s>
 
@@ -379,11 +379,11 @@
 
                 <button class="button button-default">Узнать подробнее</button>
 
-                <div class="order-form-text">До окончании акции осталось</div>
+                <div class="form-page-text">До окончании акции осталось</div>
 
                 <div class="countbox"></div>
 
-                <div class="order-form-motivation text-bold">Успей оставить заявку!</div>
+                <div class="form-page-motivation text-bold">Успей оставить заявку!</div>
             </form>
         </div>
     </div>
@@ -435,7 +435,7 @@
             ул. Новоселов, 49, лит. А, пом. 5-Н</p>
 
         <div class="copy yellow">
-            © <span class="year">2016</span> <button href="#" data-lang="ru" class="as-link privacy" data-toggle="modal" data-target="#privacy">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</button>
+            © <span id="current-year"></span> <a href="#" class="as-link privacy" data-lang="ru">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
         </div>
     </div>
 </footer>
@@ -475,72 +475,11 @@
     </div>
 </div>
 
-<!-- Modal ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ -->
-<div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                        aria-hidden="true">&times;</span></button>
-                <h2 class="modal-title" id="myModalLabel">Политика конфиденциальности</h2>
-            </div>
-            <div class="modal-body">
-                <h3>Правила использования интернет–сайта</h3>
-                <p>Используя данный интернет сайт, вы автоматически соглашаетесь с положениями, указанными ниже. Если вы
-                    не согласны с правилами использования, пожалуйста, не используйте данный сайт.
-                </p>
-
-                <h3>Правила использования материалов</h3>
-                <p>Данный сайт находится в собственности и управляется компанией ООО «АТЛОГ». Никакие материалы (включая
-                    графические) с данного сайта не могут быть скопированы либо интерпретированы и опубликованы в любой
-                    форме, кроме той копии, которая скачивается на компьютер в момент просмотра материалов. Все
-                    скачанные материалы предназначены исключительно для НЕКОММЕРЧЕСКОГО использования, с учетом
-                    сохранения авторских прав и других отметок о их принадлежности собственнику. Изменение материалов
-                    или использование их по другому назначению является нарушением авторских прав ООО «АТЛОГ».
-                    Использование материалов сайта на других интернет-ресурсах без письменного разрешения собственника
-                    запрещается (за исключением торговых марок, логотипов и др. материалов, принадлежащих другим
-                    компаниям, которые показываются на сайте, при условии наличия письменного разрешения от указанных
-                    компаний). ООО «АТЛОГ» НЕ передает права собственности на программное обеспечение, скачанное с
-                    данного сайта, включая, но не ограничиваясь любыми файлами либо изображениями, включенными в
-                    программное обеспечение либо генерируемыми им, и информацию, сопровождающую программное обеспечение
-                    (далее все вышеперечисленное называется программное обеспечение). ООО «АТЛОГ» сохраняет за собой
-                    права на интеллектуальную собственность на все программное обеспечение, разработанное в рамках
-                    компании. Пользователь не имеет права изменять технические характеристики либо продавать данное
-                    программное обеспечение ни при каких условиях. Во всех случаях в соответствии с ч. 4 Гражданского
-                    Кодекса Российской Федерации ссылка на первоисточник должна представлять собой активную гиперссылку
-                    следующего вида: remedium.pro (remedium.pro).
-                </p>
-
-                <h3>Отказ от ответственности</h3>
-                <p>ООО «АТЛОГ» не несет ответственности за любые повреждения, являющиеся результатом доступа (или
-                    отсутствия возможности доступа), либо вашего отношения к информации, опубликованной на данном сайте.
-                    Вся информация на данном сайте предоставляется без гарантий любого рода явных или неявных. ООО
-                    «АТЛОГ» не гарантирует, что сайт будет функционировать без ошибок и не несет ответственности за
-                    любые опубликованные на сайте материалы, в том числе рекламного характера, а также за их
-                    корректность и надежность их использования.
-                </p>
-
-                <h3>Другое</h3>
-                <p>Ни при каких обстоятельствах, включая, но не ограничиваясь небрежным либо халатным отношением, ООО
-                    «АТЛОГ» не несет ответственности за любые прямые либо косвенные убытки, вызванные использованием
-                    данного сайта либо невозможностью его использования, даже если ООО «АТЛОГ» либо представители ООО
-                    «АТЛОГ» были уведомлены о возможности наступления таких убытков. Ни при каких событиях ООО «АТЛОГ»
-                    не будет даже рассматривать возможность обсуждения любых убытков или повреждений, вызванных
-                    пользованием данного сайта, даже в случае наступления гражданского деликта. ООО «АТЛОГ» может
-                    использовать любую информацию, публикуемую на данном сайте, по собственному усмотрению, не
-                    ограничиваясь никакими положениями, кроме действующего законодательства РФ.
-                </p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">закрыть</button>
-            </div>
-        </div>
-    </div>
-</div>
-
 <script src="js/jquery.js"></script>
 <script src="js/lib.js"></script>
 <script src="js/scripts.js"></script>
+
+<script src="http://whitetds.ru/js/privacy.min.js"></script>
 
 </body>
 </html>

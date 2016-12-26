@@ -1,17 +1,30 @@
 
 .main-action {
   display: flex;
-  &:hover {
-    .product img {
-      margin-right: 90px;
+  @include from('xl') {
+    &:hover {
+      .product img {
+        margin-right: 90px;
+      }
     }
   }
-  &-left, &-right {
-    flex-basis: 50%;
+  @include to('m') {
+    padding-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  @include from('l') {
+    &-left, &-right {
+      flex-basis: 50%;
+    }
   }
   &-left {
     position: relative;
     background-color: #5b5243;
+    @include to('m') {
+      width: 100%;
+    }
     .main-action-column {
       float: right;
     }
@@ -25,8 +38,12 @@
   }
   &-column {
     width: 100%;
-    max-width: 585px;
-    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include from('l') {
+      max-width: 585px;
+      display: inline-block;
+    }
   }
   &-title {
     margin: 50px 0;
@@ -37,20 +54,23 @@
   }
   .product {
     margin: 45px 0 35px;
-    text-align: right;
-    img {
-      margin-right: -90px;
-      transition: all 1s ease;
+    text-align: center;
+    @include from('xl') {
+      text-align: right;
+      img {
+        margin-right: -90px;
+        transition: all 1s ease;
+      }
     }
   }
-  .order-form {
+  .form-page {
     margin: 0 auto;
     padding: 55px 0 0;
   }
   .countbox {
     margin: 15px 0 25px;
   }
-  .order-form-text {
+  .form-page-text {
     margin-top: 15px;
   }
 }

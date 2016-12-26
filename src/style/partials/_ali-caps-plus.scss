@@ -1,24 +1,37 @@
 .ali-caps-plus {
   background: url("../img/bg-ali-caps-plus.jpg") no-repeat top center;
+  background-size: cover;
+  @include to('m') {
+    padding-bottom: 20px;
+  }
   .brand {
     @include AkrobatBlack;
   }
   .list {
-    margin: 0 50px 0 0;
+    margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+    @include from('l') {
+      display: flex;
+      flex-wrap: wrap;
+    }
     li {
       margin-bottom: 90px;
-      font-size: 24px;
       flex-basis: 50%;
       display: flex;
       align-items: center;
+      @include from('s') {
+        font-size: 24px;
+      }
       &::before {
         margin-right: 45px;
         content: '';
-        @include stitches-sprite(-68px, -158px, 90px, 35px);
+        @include from('m') {
+          @include stitches-sprite(-68px, -158px, 90px, 35px);
+        }
+        @include to('s') {
+          @include stitches-sprite(-188px, -5px, 32px, 13px);
+        }
       }
       .text {
         flex-basis: calc(100% - 135px);

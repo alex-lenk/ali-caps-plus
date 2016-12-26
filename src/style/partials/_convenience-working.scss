@@ -1,15 +1,27 @@
 .convenience-working {
   ul {
-    padding: 20px 0 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
     list-style: none;
     text-align: center;
     display: flex;
     justify-content: space-between;
+    @include to('m') {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @include to('m') {
+    li {
+      margin-bottom: 40px;
+    }
   }
   .title {
     margin-bottom: 20px;
-    text-align: left;
     color: #e7ae4a;
+    @include from('l') {
+      text-align: left;
+    }
   }
   .item {
     color: #686868;

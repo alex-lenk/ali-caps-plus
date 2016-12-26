@@ -10,13 +10,16 @@
     background: url("../img/consultant.png") no-repeat 60px 0;
     @include AkrobatRegular;
     .free {
-      font-size: 60px;
+      font-size: 40px;
       letter-spacing: 6px;
       @include AkrobatBlack;
+      @include from('m') {
+        font-size: 60px;
+      }
     }
   }
   &-button {
-    padding: 30px 0;
+    padding: 30px 15px;
     background-color: #111010;
     .button {
       height: 76px;
@@ -24,8 +27,10 @@
       width: 100%;
       letter-spacing: 1.5px;
       padding-top: 2px;
-      font-size: 32px;
       @include AkrobatRegular;
+      @include from('m') {
+        font-size: 32px;
+      }
     }
   }
 }
