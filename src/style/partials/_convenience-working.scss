@@ -1,0 +1,27 @@
+.convenience-working {
+  ul {
+    padding: 20px 0 30px;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .title {
+    margin-bottom: 20px;
+    text-align: left;
+    color: #e7ae4a;
+  }
+  .item {
+    color: #686868;
+    font-size: 12px;
+    display: inline-block;
+    &:not(:last-of-type) {
+      margin-right: 40px;
+    }
+    &::before {
+      margin: 0 auto 10px;
+      display: block;
+      content: '';
+    }
+  }
+}

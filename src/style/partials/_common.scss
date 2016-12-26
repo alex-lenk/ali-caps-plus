@@ -145,10 +145,10 @@ body {
 }
 
 a, .as-link {
+  color: #e7ae4a;
   text-decoration: none;
   transition: all .4s ease-in-out;
   &:hover, a:focus {
-    color: #e7ae4a;
     border-bottom-color: transparent;
   }
 }
@@ -241,56 +241,51 @@ textarea.form-control {
   }
 }
 
-.hide-placeholder::-webkit-input-placeholder {
-  opacity: 1;
-  transition: opacity 0.3s ease;
-  color: #686868;
-  font-size: 12px;
-}
-
-.hide-placeholder::-moz-placeholder {
-  opacity: 1;
-  transition: opacity 0.3s ease;
-  color: #686868;
-  font-size: 12px;
-}
-
-.hide-placeholder:-moz-placeholder {
-  opacity: 1;
-  transition: opacity 0.3s ease;
-  color: #686868;
-  font-size: 12px;
-}
-
-.hide-placeholder:-ms-input-placeholder {
-  opacity: 1;
-  transition: opacity 0.3s ease;
-  color: #fff;
-  font-size: 12px;
-}
-
-.hide-placeholder:focus::-webkit-input-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  color: #686868;
-}
-
-.hide-placeholder:focus::-moz-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  color: #686868;
-}
-
-.hide-placeholder:focus:-moz-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  color: #686868;
-}
-
-.hide-placeholder:focus:-ms-input-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  color: #686868;
+.hide-placeholder {
+  &::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    color: #686868;
+    font-size: 12px;
+  }
+  &::-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    color: #686868;
+    font-size: 12px;
+  }
+  &:-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    color: #686868;
+    font-size: 12px;
+  }
+  &:-ms-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    color: #fff;
+    font-size: 12px;
+  }
+  &:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #686868;
+  }
+  &:focus::-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #686868;
+  }
+  &:focus:-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #686868;
+  }
+  &:focus:-ms-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #686868;
+  }
 }
 
 .container {
@@ -336,10 +331,10 @@ textarea.form-control {
 }
 
 .sprite {
-  &-courier {
+  &-courier::before {
     @include stitches-sprite(-5px, -5px, 79px, 43px);
   }
-  &-dhl {
+  &-dhl::before {
     @include stitches-sprite(-94px, -5px, 84px, 21px);
   }
   &-icon::before {
@@ -366,22 +361,22 @@ textarea.form-control {
   &-item-header {
     @include stitches-sprite(-188px, -5px, 32px, 13px);
   }
-  &-jcb {
+  &-jcb::before {
     @include stitches-sprite(-188px, -97px, 43px, 41px);
   }
-  &-mastercard {
+  &-mastercard::before {
     @include stitches-sprite(-230px, -5px, 74px, 51px);
   }
-  &-mastercard-securecode {
+  &-mastercard-securecode::before {
     @include stitches-sprite(-188px, -148px, 80px, 42px);
   }
-  &-post-russia {
+  &-post-russia::before {
     @include stitches-sprite(-241px, -66px, 76px, 38px);
   }
-  &-visa {
+  &-visa::before {
     @include stitches-sprite(-168px, -200px, 56px, 39px);
   }
-  &-visa-verified {
+  &-visa-verified::before {
     @include stitches-sprite(-234px, -200px, 74px, 47px);
   }
 }
