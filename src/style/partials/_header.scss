@@ -53,6 +53,7 @@
     margin-bottom: 20px;
     font-size: 32px;
     text-transform: uppercase;
+    text-shadow: 0 0 0 #fff;
     @include AkrobatBlack;
   }
   &-title {
@@ -70,6 +71,9 @@
     }
     &-text {
       @include GothamLight;
+    }
+    .white {
+      text-shadow: 0 0 1px #111010;
     }
   }
   &-list {

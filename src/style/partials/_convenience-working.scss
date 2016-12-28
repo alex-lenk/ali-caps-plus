@@ -3,7 +3,6 @@
     padding-top: 20px;
     padding-bottom: 30px;
     list-style: none;
-    text-align: center;
     display: flex;
     justify-content: space-between;
     @include to('m') {
@@ -19,14 +18,12 @@
   .title {
     margin-bottom: 20px;
     color: #e7ae4a;
-    @include from('l') {
-      text-align: left;
-    }
   }
   .item {
     color: #686868;
     font-size: 12px;
     display: inline-block;
+    text-align: center;
     &:not(:last-of-type) {
       margin-right: 40px;
     }

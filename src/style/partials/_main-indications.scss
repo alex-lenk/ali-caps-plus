@@ -86,11 +86,12 @@
         left: 0;
         color: #1f1f1f;
         font-size: 30px;
-        line-height: 30px;
         background-color: #e7ae4a;
         border-radius: 50%;
-        text-align: center;
         content: '•';
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }

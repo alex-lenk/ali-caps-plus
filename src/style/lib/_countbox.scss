@@ -1,13 +1,13 @@
 .countbox {
-  margin: 10px 0 10px;
+  margin: 15px 0;
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   &-space {
-    display: none;
+    width: 10px;
   }
-  &-hours1, &-mins1, &-secs1 {
-    margin: 0 5px 0 0;
+  &-secs1, &-secs2 {
+    color: #e7ae4a;
   }
   &-hours1, &-hours2, &-mins1, &-mins2, &-secs1, &-secs2 {
     width: 33px;

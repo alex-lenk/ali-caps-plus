@@ -336,6 +336,10 @@ button:focus {
   color: #e7ae4a;
 }
 
+.red {
+  color: #c00;
+}
+
 .sprite {
   &-courier::before {
     @include stitches-sprite(-5px, -5px, 79px, 43px);
@@ -371,10 +375,10 @@ button:focus {
     @include stitches-sprite(-188px, -97px, 43px, 41px);
   }
   &-mastercard::before {
-    @include stitches-sprite(-230px, -5px, 74px, 51px);
+    @include stitches-sprite(-231px, -10px, 71px, 44px);
   }
   &-mastercard-securecode::before {
-    @include stitches-sprite(-188px, -148px, 80px, 42px);
+    @include stitches-sprite(-199px, -157px, 66px, 28px);
   }
   &-post-russia::before {
     @include stitches-sprite(-241px, -66px, 76px, 38px);
@@ -383,7 +387,7 @@ button:focus {
     @include stitches-sprite(-168px, -200px, 56px, 39px);
   }
   &-visa-verified::before {
-    @include stitches-sprite(-234px, -200px, 74px, 47px);
+    @include stitches-sprite(-239px, -206px, 57px, 33px);
   }
 }
 
