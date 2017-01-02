@@ -1,8 +1,11 @@
 .composition {
   padding-bottom: 30px;
   color: #fff;
-  background: url("../img/bg-composition.jpg") no-repeat center top;
-  background-size: cover;
+  background-color: #161614;
+  @include from('s') {
+    background: url(../img/bg-composition.jpg) no-repeat center top #161614;
+    background-size: cover;
+  }
   &-list {
     margin: 0;
     padding: 0;

@@ -1,8 +1,11 @@
 .main-indications {
   padding-bottom: 40px;
   color: #fff;
-  background: url("../img/bg-main-indications.jpg") no-repeat center top;
-  background-size: cover;
+  background-color: #38332d;
+  @include from('s') {
+    background: url(../img/bg-main-indications.jpg) no-repeat center top #38332d;
+    background-size: cover;
+  }
   .container {
     display: flex;
     flex-wrap: wrap;

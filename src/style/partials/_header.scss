@@ -2,6 +2,7 @@
   background: url("../img/bg-header.jpg") no-repeat center top #eaeaea;
   position: relative;
   @include to('m') {
+    padding-bottom: 20px;
     background-color: #fdf9f6;
   }
   @include from('l') {

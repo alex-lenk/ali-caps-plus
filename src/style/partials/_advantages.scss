@@ -1,6 +1,9 @@
 .advantages {
-  background: url(../img/bg-advantages.jpg) no-repeat center top;
-  background-size: cover;
+  background-color: #3b3b3b;
+  @include from('s') {
+    background: url(../img/bg-advantages.jpg) no-repeat center top #3b3b3b;
+    background-size: cover;
+  }
   &-brand {
     margin-top: 10px;
     display: block;

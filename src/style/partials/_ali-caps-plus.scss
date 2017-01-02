@@ -1,6 +1,8 @@
 .ali-caps-plus {
-  background: url("../img/bg-ali-caps-plus.jpg") no-repeat top center;
-  background-size: cover;
+  @include from('s') {
+    background: url(../img/bg-ali-caps-plus.jpg) no-repeat center top;
+    background-size: cover;
+  }
   @include to('m') {
     padding-bottom: 20px;
   }
