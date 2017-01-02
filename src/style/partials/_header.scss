@@ -30,6 +30,7 @@
     .button {
       &:hover {
         color: #fff;
+        outline: 1px solid #e7ae4a;
       }
       @include to('s') {
         display: none;

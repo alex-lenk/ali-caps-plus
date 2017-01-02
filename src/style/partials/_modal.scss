@@ -1,0 +1,73 @@
+.modal {
+  &.in .modal-dialog {
+    transform: translate(0, 50%);
+  }
+  &-header {
+    background: #000;
+    position: relative;
+    .close {
+      color: #fff;
+      opacity: .8;
+    }
+  }
+  &-title {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font: 30px/105% "Arial Black", Arial, sans-serif;
+    &::after {
+      position: absolute;
+      left: 50%;
+      margin-left: -31px;
+      bottom: -21px;
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 31px solid transparent;
+      border-right: 31px solid transparent;
+      border-top: 22px solid #000;
+    }
+    &__title {
+      padding-top: 30px;
+      margin-bottom: 50px;
+      color: #000;
+      font: 600 28px/105% "Arial Bold", Arial, sans-serif;
+    }
+  }
+  &-body {
+    padding: 35px;
+    text-align: center;
+  }
+  &-form {
+    &__text {
+      text-align: center;
+      padding-top: 15px;
+      font: 16px/105% "Arial Regular", Arial, sans-serif;
+      margin-bottom: 15px;
+      color: #130f44;
+      &-call {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        color: #130f44;
+        font: 600 16px/105% "Arial Bold", Arial, sans-serif;
+      }
+    }
+    &__button {
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 25px;
+      margin-bottom: 30px;
+    }
+  }
+  &__button.button:hover {
+    background: 0 0;
+  }
+}

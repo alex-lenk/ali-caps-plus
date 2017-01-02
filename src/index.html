@@ -249,7 +249,7 @@
     </div>
 
     <div class="consultation-button">
-        <button class="button button-default" data-toggle="modal" data-target="#modal-order">Получить консультацию</button>
+        <button class="button button-default" data-toggle="modal" data-target="#modal-form">Получить консультацию</button>
     </div>
 </section>
 
@@ -495,6 +495,38 @@
                 <button class="button button-default"><span>Отправить заявку</span></button>
             </div>
         </form>
+    </div>
+</div>
+
+<div class="modal modal-form fade" id="modal-form">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Официальный  консультационный центр</h4>
+            </div>
+            <div class="modal-body">
+                <div class="modal-form__title"> Оставьте свой номер и перезвоним</div>
+                <form action="/order" method="post" class="order-form">
+                    <input type="hidden" name="country" value="RU">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name1" class="form-control hide-placeholder" placeholder="Ваше имя">
+                        <label for="name1" class="form-label">Ваше имя</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="phone" id="phone1" class="form-control hide-placeholder" placeholder="Ваш телефон">
+                        <label for="phone1" class="form-label">Ваш телефон</label>
+                    </div>
+                    <div class="modal-form__text">Анонимность гарантирована</div>
+                    <button class="button modal-form__button button-default">Оставить заявку</button>
+                    <div class="modal-form__text-call">
+                        <div class="modal-form__text-call__left"></div>
+                        <div class="modal-form__text-call__right">Оператор перезвонит Вам через 15-30 минут</div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
 
